@@ -14,7 +14,20 @@
 .title h1{
     padding: 15px;
     font-size: 24px;
-    /* font-weight: 900; */
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
 }
 .front{
     background: linear-gradient(rgba(253, 253, 253, 0.9),rgba(253, 253, 253, 0.9));
@@ -34,6 +47,20 @@
     margin: auto;
     margin-top: 10vh;
     overflow: hidden;
+    animation: moveright 0.3s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
 }
 .frontDetails p{
     margin-bottom: 20px;
@@ -61,6 +88,20 @@
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    animation: zoomin 0.3s linear 1;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin {
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
 }
 @media(max-width: 600px){
     .container-2{
@@ -93,8 +134,21 @@
 }
 .aboutDetails{
     max-width: 560px;
-    /* border: 1px solid red; */
     padding: 17px;
+    animation: moveleft 0.3s linear 1;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
 }
 .aboutDetails p{
     margin-top: 10px;
@@ -116,8 +170,11 @@
     max-width: 400px;
     max-height: 400px;
     border-radius: 10px;
-    /* border: 2px solid rgb(95, 95, 252); */
     overflow: hidden;
+    animation: zoomin 0.3s linear 1;
+    animation-delay: 5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .aboutImage img{
     width: 100%;
@@ -133,6 +190,10 @@
 }
 .services h1{
     text-align: center;
+    animation: movedown 0.3s linear 1;
+    animation-delay: 7s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .servicesContainer{
     max-width: 80vw;
@@ -144,6 +205,10 @@
     margin-top: 18px;
     text-align: center;
     padding: 10px;
+    animation: movedown 0.3s linear 1;
+    animation-delay: 8s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .servicesDetail i{
     font-size: 64px;
