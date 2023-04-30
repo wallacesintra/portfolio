@@ -13,9 +13,9 @@ nav{
     margin-bottom: 10px;
 }
 nav h1{
-    background-color: rgb(95, 95, 252);
+    font-size: 30px;
     border-radius: 27% 73% 28% 72% / 49% 29% 71% 51% ;
-    color: white;
+    color: rgb(95, 95, 252);
     padding: 13px;
 }
 .topnav {
@@ -207,13 +207,19 @@ nav h1{
 }
 
 .services{
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    min-height: 65vh;
+}
+@media(max-width: 400px){
+    .services{
+        min-height: 85vh;
+    }
 }
 .services h1{
-    text-align: center;
-    color:  rgb(95, 95, 252);
-
-    
+    /* text-align: center; */
+    padding: 20px;
+    font-size: 30px;
+    color:  rgb(95, 95, 252);   
 }
 .servicesContainer{
     max-width: 80vw;
@@ -243,7 +249,7 @@ nav h1{
 footer{
     background: rgb(95, 95, 252);
     width: 100%;
-    position: relative;
+    position: fixed;
     text-align: center;
     padding: 15px 0;
     margin-top: 0px;
@@ -301,6 +307,9 @@ footer a:hover{
 }
 
 /* ----------------projects------------------ */
+.projectsSection{
+    min-height: 65vh;
+}
 .titleProject{
     margin: 20px;
     display: flex;
@@ -373,24 +382,64 @@ footer a:hover{
     }
 }
 /* /////-------------contact page------------------ */
-.contactItem{
-    padding: 10px;
-    max-width: 350px;
-    height: 40px;
+.contactPage{
+    /* width: 80vw; */
+    margin: auto;
     display: flex;
-    border-radius: 40px;
+    /* min-height: 65vh; */
+}
+@media(max-width: 600px ){
+    .contactPage{
+        flex-direction: column;
+    }
+}
+.contactDetail{
+    flex-basis: 50%;
+}
+.contactDetail p{
+    padding: 20px;
+}
+.contactImg{
+    /* flex-basis: 50%; */
+    background-color: rgb(95, 95, 252);
+    margin: auto;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 58% 42% 52% 48% / 30% 30% 70% 70% ;
+}
+.contactImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+#contactsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    /* align-items: center; */
+    /* padding-bottom: 30px; */
+}
+.contactItem{
+    padding: 5px 5px;
+    /* max-width: 400px; */
+    width: 30px;
+    height: 30px;
+    /* display: flex; */
+    border-radius: 50%;
     text-align: center;
-    margin: 20px;
+    align-self: center;
+    margin: 10px;
+    
 }
 .contactItem i{
     color: white;
-    font-size: 30px;
-    align-self: center;
-    
+    font-size: 20px;   
 }
 .contactItem p{
     align-self: center;
-    padding-left: 20px;
-    font-size: 20px;
+    padding-left: 5px;
+    font-size: 17px;
     color: white;
 }
