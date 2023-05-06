@@ -1,3 +1,4 @@
+// nav
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -5,20 +6,8 @@ function myFunction() {
     } else {
       x.className = "topnav";
     }
-  }
-// contact links
+}
 
-const linkedIn = document.getElementById("linkedIn");
-linkedIn.addEventListener("click", function(){
-    window.location.href="https://www.linkedin.com/in/wallace-wahong-o-a523a31b5/";
-})
-
-const gitHub = document.getElementById('gitHub');
-gitHub.addEventListener("click", function(){
-    window.location.href = "https://github.com/wallacesintra";
-})
-
-// --------------------------------container project
 const projectsArray = [
     {
         id: 1,
