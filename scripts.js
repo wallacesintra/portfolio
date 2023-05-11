@@ -22,7 +22,7 @@ gitHub.addEventListener("click", function(){
 const projectsArray = [
     {
         id: 1,
-        title: "Printing & Branding Website",
+        title: "printing company Website",
         image: "images/eastEvent.png",
         liveDemo: "https://eastgenerals.netlify.app",
         codeLink: "https://github.com/wallacesintra/east-general-web",
@@ -31,7 +31,7 @@ const projectsArray = [
     },
     {
         id: 1,
-        title: "Photography Website",
+        title: "photography website",
         image: "images/artsyFrame.png",
         liveDemo: "https://artsyframes.netlify.app",
         codeLink: "https://github.com/wallacesintra/photography-website",
@@ -85,11 +85,13 @@ projectsArray.forEach(item => {
 // Create the view code link element
    var viewCodeLink = document.createElement("a");
    viewCodeLink.href = `${item.codeLink}`;
+   viewCodeLink.target = '_blank';
    viewCodeLink.textContent = "view code";
 
 // Create the live demo link element
    var liveDemoLink = document.createElement("a");
    liveDemoLink.href = `${item.liveDemo}`;
+   liveDemoLink.target = '_blank';
    liveDemoLink.textContent = "live demo";
 
 // Append the links to the codes element

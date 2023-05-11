@@ -55,40 +55,20 @@ const contactLinks = [
 ]
 
 contactLinks.forEach(item => {
-    // const container = document.getElementById('contactsContainer');
-    // Select the parent element
+// Select the parent element
     var contactDiv = document.getElementById('contactsContainer');
-
 // Create the contact item element
     var contactItemDiv = document.createElement("div");
     contactItemDiv.classList.add("contactItem");
-
-// Create the WhatsApp icon element
+// Create the icon element
    contactItemDiv.innerHTML = `${item.icon}`;
-
-// Create the phone number element
-//    var phoneNumberParagraph = document.createElement("p");
-//    phoneNumberParagraph.textContent = `${item.name}`;
-
-// Append the WhatsApp icon and phone number to the contact item element
-//    contactItemDiv.appendChild(whatsappIcon);
-//    contactItemDiv.appendChild(phoneNumberParagraph);
    // background
    contactItemDiv.style.backgroundColor = `${item.color}` ;
    contactItemDiv.style.cursor = "pointer";
-   //    eventListener
- 
+   //  eventListener
    contactItemDiv.addEventListener('click', function(){
     window.location.href = `${item.link}`;
    })
-
 // Append the contact item element to the contact parent element
    contactDiv.appendChild(contactItemDiv);
-
-
-   
-
-
-
-
 })
