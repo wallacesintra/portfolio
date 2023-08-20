@@ -28,7 +28,7 @@ const contactLinks = [
         name: '@wallacesintra',
         icon: '<i class="fa-brands fa-x-twitter"></i>',
         link: 'https://twitter.com/wallacesintra',   
-        color: '#333'
+        color: '#14171A'
     },
     {
         id: 3,
