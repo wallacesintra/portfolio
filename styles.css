@@ -280,7 +280,9 @@ footer a:hover{
 .fa-linkedin{
     color: #0072b1;
     cursor: pointer;
- 
+}
+.fa-x-twitter{
+    font-size: 25px;
 }
 .fa-html5{
     color: #e34c26;
