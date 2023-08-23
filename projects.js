@@ -11,7 +11,7 @@ function myFunction() {
 const projectsArray = [
     {
         id: 1,
-        title: "printing company Website",
+        title: "printing company website",
         image: "images/eastEvent.png",
         liveDemo: "https://eastgenerals.netlify.app",
         codeLink: "https://github.com/wallacesintra/east-general-web",
