@@ -22,11 +22,11 @@ gitHub.addEventListener("click", function(){
 const projectsArray = [
     {
         id: 1,
-        title: "printing company Website",
+        title: "printing company website",
         image: "images/eastEvent.png",
         liveDemo: "https://eastgenerals.netlify.app",
         codeLink: "https://github.com/wallacesintra/east-general-web",
-        description: "A website for Printing and Branding Company. It is website to market their products, and a way for their customers to view their services."
+        description: "A website for printing and branding Company to market their products, and a way for their customers to view their services."
 
     },
     {
