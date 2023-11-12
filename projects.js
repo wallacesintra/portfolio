@@ -97,7 +97,7 @@ const projectContainer = document.getElementById('projects');
 
 // })
 
-const projectRenderItem = () => {
+var projectRenderItem = () => {
     projectsArray.forEach(item => {
         return (
         `<div class="projectItem">
