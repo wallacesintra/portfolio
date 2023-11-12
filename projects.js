@@ -118,4 +118,4 @@ var projectRenderItem = () => {
     })
 }
 
-projectContainer.innerHTML = projectRenderItem
+projectContainer.innerText = projectRenderItem
