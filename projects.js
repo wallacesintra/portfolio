@@ -114,6 +114,7 @@ var projectRenderItem = () => {
             </div>
         </div>` 
         )
+        
     })
 }
 
