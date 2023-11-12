@@ -97,25 +97,43 @@ const projectContainer = document.querySelector(".projects");
 
 // })
 
-var projectRenderItem = () => {
-    projectsArray.forEach(item => {
-        return (
-        `<div class="projectItem">
-            <div class="projectPic">
-                <img src= ${item.image} alt="web snippet">
-            </div>
-            <div class="projectDetails">
-                <h1>${item.title}</h1>
-                <p>${item.description}</p>
-                <div class="codes">
-                    <a href=${item.codeLink} target="_blank">view code</a>
-                    <a href=${item.liveDemo} target="_blank">live demo</a>
-                </div>
-            </div>
-        </div>` 
-        )
+// var projectRenderItem = () => {
+//     projectsArray.forEach(item => {
+//         return (
+//         `<div class="projectItem">
+//             <div class="projectPic">
+//                 <img src= ${item.image} alt="web snippet">
+//             </div>
+//             <div class="projectDetails">
+//                 <h1>${item.title}</h1>
+//                 <p>${item.description}</p>
+//                 <div class="codes">
+//                     <a href=${item.codeLink} target="_blank">view code</a>
+//                     <a href=${item.liveDemo} target="_blank">live demo</a>
+//                 </div>
+//             </div>
+//         </div>` 
+//         )
         
-    })
-}
+//     })
+// }
 
-projectContainer.innerText = projectRenderItem
+var projectRenderItem = projectsArray.map((item) => {
+    return(
+    `<div class="projectItem">
+        <div class="projectPic">
+            <img src= ${item.image} alt="web snippet">
+        </div>
+        <div class="projectDetails">
+            <h1>${item.title}</h1>
+            <p>${item.description}</p>
+            <div class="codes">
+                <a href=${item.codeLink} target="_blank">view code</a>
+                <a href=${item.liveDemo} target="_blank">live demo</a>
+            </div>
+        </div>
+    </div>`
+    )
+})
+
+projectContainer.innerHTML = projectRenderItem
