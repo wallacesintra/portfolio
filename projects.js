@@ -29,7 +29,7 @@ const projectsArray = [
     }
 ]
 
-const projectContainer = document.getElementByClass('projects');
+const projectContainer = document.querySelector(".projects");
 
 // projectsArray.forEach(item => {
 
