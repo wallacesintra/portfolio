@@ -268,6 +268,7 @@ footer a:hover{
 }
 
 /* ----------------------icons--------------------------------- */
+
 .fa-brands,.fa-solid,.fa-regular{
     font-size: 25px;
     padding: 5px;
@@ -302,6 +303,9 @@ footer a:hover{
 }
 .fa-square-whatsapp{
     color: #075E54;
+}
+.fa-android{
+    color: #3DDC84;
 }
 
 /* ----------------projects------------------ */
