@@ -15,16 +15,26 @@ const projectsArray = [
         image: "images/eastEvent.png",
         liveDemo: "https://eastgenerals.netlify.app",
         codeLink: "https://github.com/wallacesintra/east-general-web",
-        description: "A website for a printing and branding Company to showcase their products, and a way for their customers to view their services."
+        description: "A website for printing and branding company to market their products, and a way for their customers to view their services."
+
+    },
+
+    {
+        id: 2,
+        title: "printing company website",
+        image: "images/eastEvent.png",
+        liveDemo: "https://eastgenerals.netlify.app",
+        codeLink: "https://github.com/wallacesintra/east-general-web",
+        description: "A website for printing and branding company to market their products, and a way for their customers to view their services."
 
     },
     {
-        id: 1,
+        id: 3,
         title: "photography website",
         image: "images/artsyFrame.png",
         liveDemo: "https://artsyframes.netlify.app",
         codeLink: "https://github.com/wallacesintra/photography-website",
-        description: "A portofolio website for a photography company, clients are able to view the company's projects. "
+        description: "A portfolio website for a photography company, clients are enable to view the company's projects. "
 
     }
 ]
