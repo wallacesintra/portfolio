@@ -34,7 +34,7 @@ const projectsArray = [
         image: "images/artsyFrame.png",
         liveDemo: "https://artsyframes.netlify.app",
         codeLink: "https://github.com/wallacesintra/photography-website",
-        description: "A portfolio website for a photography company, clients are enable to view the company's projects. "
+        description: "A portofolio website for a photography company, clients are able to view the company's projects. "
 
     }
 ]
