@@ -12,12 +12,14 @@ nav{
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
 nav h1{
     font-size: 30px;
     border-radius: 27% 73% 28% 72% / 49% 29% 71% 51% ;
     color: rgb(95, 95, 252);
     padding: 13px;
 }
+
 .topnav {
     overflow: hidden;
 }
@@ -241,6 +243,7 @@ nav h1{
     padding: 10px;
 }
 .servicesDetail h3{
+    padding: 10px;
     font-size: 23px;
 }
 footer{
